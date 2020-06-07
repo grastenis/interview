@@ -9,7 +9,7 @@ spec:
   - name: http
     port: 8000
   selector:
-    app: httpbin-isssue-2
+    app: httpbin-issue-2
     version: v2
 ---
 apiVersion: apps/v1
