@@ -35,4 +35,4 @@ spec:
         ports:
         - containerPort: 8000
       nodeSelector:
-          node-role.kubernetes.io/httpbin: ''
+        node-role.kubernetes.io/worker: ''
