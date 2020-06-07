@@ -1,32 +1,32 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: httpbin-issue-6
+  name: httpbin-issue-8
   labels:
-    app: httpbin-issue-6
+    app: httpbin-issue-8
 spec:
   ports:
   - name: http
     port: 8000
   selector:
-    app: httpbin-issue-6
-    version: v6
+    app: httpbin-issue-8
+    version: v8
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: httpbin-issue-6
+  name: httpbin-issue-8
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: httpbin-issue-6
-      version: v6
+      app: httpbin-issue-8
+      version: v8
   template:
     metadata:
       labels:
-        app: httpbin-issue-6
-        version: v6
+        app: httpbin-issue-8
+        version: v8
     spec:
       containers:
       - image: docker.io/citizenstig/httpbin
@@ -34,3 +34,5 @@ spec:
         name: httpbin
         ports:
         - containerPort: 8000
+      nodeSelector:
+        node-role.kubernetes.io/worker: ''

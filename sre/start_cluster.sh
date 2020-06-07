@@ -1,4 +1,4 @@
-kind create cluster --name holvi-sre --config cluster.yaml --wait 5m
+kind create cluster --name holvi-sre --config $( dirname "${BASH_SOURCE[0]}")/cluster.yaml --wait 5m
 
 source $( dirname "${BASH_SOURCE[0]}")/scripts/add_labels.sh
 

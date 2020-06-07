@@ -46,5 +46,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: httpbin
+          serviceName: httpbin-issue-7
           servicePort: 8000

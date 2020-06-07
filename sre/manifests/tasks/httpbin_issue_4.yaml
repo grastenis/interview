@@ -34,4 +34,5 @@ spec:
         name: httpbin
         ports:
         - containerPort: 8000
-      nodeName: holvi-sre-worker1
+      nodeSelector:
+        node-role.kubernetes.io/worker: ''
