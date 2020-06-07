@@ -7,7 +7,7 @@ metadata:
 spec:
   ports:
   - name: http
-    port: 8001
+    port: 8000
   selector:
     app: httpbin-issue-6
     version: v6
