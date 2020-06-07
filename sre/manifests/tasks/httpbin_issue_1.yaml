@@ -32,8 +32,7 @@ spec:
       - image: docker.io/citizenstig/httpbin
         imagePullPolicy: IfNotPresent
         name: httpbin
-        command: 
-         - "echo"
-         - "$(date)"
+        command: ["/bin/sh", "-c"]
+        args: ["echo $(date); /run.sh"]
         ports:
         - containerPort: 8000
