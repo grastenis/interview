@@ -16,7 +16,8 @@ by running
 ## Bootstrapping cluster
 
 ```
-./sre/start_cluster.sh
+cd sre
+./start_cluster.sh
 ```
 
 ## Task
