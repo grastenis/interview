@@ -29,7 +29,7 @@ We have a set of problematic deployments(in sre/manifests/tasks/) you need to fi
  - Check you got problematic deployments by running kubectl get pods
  - Fix problematic deployment or add required implementation details
  - Make a commit for a fix
- - Verify your fix by running command kubectl port-forward svc/httpbin-issue-<issue number> 8000:8000
+ - Verify your fix by running command kubectl port-forward svc/httpbin-issue-&lt;issue number&gt; 8000:8000
  - Open browser and access http://localhost:8000/ and if you managed to fix issue you will see httpbin page
 
 We got in total six problematic deployments to fix. And some extra tasks
